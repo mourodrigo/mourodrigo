@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<title>Mourodrigo</title>
+		<style>
+		body {
+			text-align: center;
+			padding: 0px;
+			margin: 0px auto;
+			background-color: gray;
+		}
+		 
+		.container {
+			margin: 0 auto;
+			height: 100% auto; 
+			width: 1024px;
+			background-color: white;
+			border-bottom-style: outset;
+			border-right-style: outset;
+			border-color: black;	
+			
+		}
+		.conteudo {
+			text-align: left;		
+		}
+		p{
+		margin-left: 1%;
+		font-family:Helvetica;
+		}		
+		h1{
+		margin-left: 1%;
+		margin-top: 3%;
+		font-family:Helvetica;
+		text-align: left;
+		}
+		hr{
+		margin-top: 3%;
+		}
+		.nome{
+		background-color: green;
+		border-bottom-style: outset;
+		border-bottom-color: gray;
+		}
+		.headLeft{
+		margin-left: 1%;
+		text-align: left;	
+		position: inherit;		
+		}
+		.headRight{
+		margin-right: 1%;
+		text-align: right;
+		position: inherit;
+		margin-top: -4%
+		}
+		.feets{
+		
+		}
+		</style>		
+		</head>
+	<body>
+		<div class="container">
+			<div class="nome"><h1><br> Rodrigo Bueno Tomiosso</h1></div>
+			<div class="headLeft"><br> Rua São Pedro, 401 D, Ap 101, Centro, Chapecó-SC  </div>
+			<div class="headRight"><br> rodrigo.uffs@gmail.com – (49)91048863</div>
+			 	
+			<div class="conteudo">
+				<h1>Informações Gerais:</h1>
+				<p><strong>Data de nascimento: </strong>20/04/1990</p>
+				<p><strong>Data de nascimento: </strong>20/04/1990</p>
+			</div>
+		</div>
+	</body>
+</html>
+
+
