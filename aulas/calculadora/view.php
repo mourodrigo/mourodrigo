@@ -29,4 +29,23 @@ function print_rodape(){
 	echo '</html>';
 }
 
+function print_calculadora(){
+	echo '<div class="calculadora">
+			<form class="form" action="index.php" method="post">
+				Valor 1<input type="Valor 1" name="v1">
+				<select name="operacao">
+  					<option value="+">+</option>
+  					<option value="-">-</option>
+  					<option value="/">/</option>
+  					<option value="*">*</option>
+				</select>
+				Valor 2<input type="Valor 2" name="v2">
+				<br><input type="submit" value="Calcular">
+				
+			</form>
+		  </div>';
+}
+
 ?>
+
+

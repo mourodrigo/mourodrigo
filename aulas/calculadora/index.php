@@ -18,6 +18,34 @@ import_css();
 print_header("aula 01");
 print_body();
 print_cabecalho();
+print_calculadora();
+if (isset($_REQUEST['v1'])&&isset($_REQUEST['v2'])) {
+	echo '<span> Resultado:';
+	switch($_REQUEST['operacao']){
+		case '+':
+			# code...
+			$resultado = $_REQUEST['v1']+$_REQUEST['v2'];
+			echo $resultado;
+			break;
+		case '-':
+			# code...
+			$resultado = $_REQUEST['v1']-$_REQUEST['v2'];
+			echo $resultado;
+			break;
+		case '*':
+			# code...
+			$resultado = $_REQUEST['v1']*$_REQUEST['v2'];
+			echo $resultado;
+			break;
+		case '/':
+			# code...
+			$resultado = $_REQUEST['v1']/$_REQUEST['v2'];
+			echo $resultado;
+			break;
+	} 
+echo '</span>';
+}
+
 print_rodape();
 
 ?>
