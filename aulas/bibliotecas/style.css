@@ -1,0 +1,55 @@
+		body {
+			text-align: center;
+			padding: 0px;
+			margin: 0px auto;
+			background-color: gray;
+			border-bottom-width: 5%;
+		}
+		.cf:before, .cf:after {
+		    content: "\0020"; 
+		    display: block; 
+		    height: 0; 
+		    overflow: hidden;
+		}
+
+		.cf:after { clear: both; }
+
+		.cf { zoom: 1; }
+		 
+		.containerHeader{
+			margin: 0 auto;
+			height: 100%auto; 
+			width: 1000px;
+			border-bottom: dashed;
+			border-color: black;	
+			
+		}
+
+		.container{
+			margin: 0 auto;
+			height: 100% auto; 
+			width: 1000px;
+			/*background-color: white;*/
+			border: outset;
+			border-color: black;	
+		}
+		.cabecalho{
+			width: 100% auto;
+			height: 100px;
+			background-color: green;
+			color: black;
+			font-family: Helvetica;
+			font-size: 20px;
+			border-bottom-width: 5px;
+			border-bottom-color: black;
+		}
+		.rodape{
+			margin-top: 50px;
+			width: 100% auto;
+			height: 100px;
+			background-color: green;
+			color: black;
+			font-family: Helvetica;
+			font-size: 20px;
+			
+		}
