@@ -1,0 +1,304 @@
+		body {
+			text-align: center;
+			padding: 0px;
+			/*margin: 0px auto;*/
+			margin-top: 10px;
+			background-color: orange;
+			border-bottom-width: 5%;
+		}
+		.cf:before, .cf:after {
+		    content: "\0020"; 
+		    display: block; 
+		    height: 0; 
+		    overflow: hidden;
+		}
+
+		.cf:after { clear: both; }
+
+		.cf { zoom: 1; }
+		 
+		.containerHeader{
+			margin: 0 auto;
+			height: 100%auto; 
+			width: 1000px;
+			border-bottom: dashed;
+			border-color: black;	
+			
+		}
+		.container{
+			margin: 0 auto;
+			height: 700px; 
+			width: 1000px;
+			/*background-color: white;*/
+			border: outset;
+			border-color: black;
+			background-color: black;	
+			
+		}
+		/*.conteudo {
+			width: 500px;
+			background-color: white;
+			text-align: left;
+
+		}*/
+		.containerTelaInicial{
+			float: left;
+			margin-left: 10%;
+			width: 80%;
+			height: 100%;
+			background-color: black;
+		}
+		span{
+			float: none;
+			text-align: center;
+			font-family: Helvetica;
+			font-size: 45px;
+			color: orange;
+		}
+		.topo{
+			width: 100% auto;
+			height: 10%;
+			margin-top: 5%;
+			margin-bottom: 5%;
+			float: none;
+			text-align: center;
+			font-family: Helvetica;
+			font-size: 20px;
+			color: orange;
+			background-color: black;	
+		}
+		.bloco1{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 18%;
+			width:20%;
+			height:20%;
+		}
+		.bloco2{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 1%;
+			width:20%;
+			height:20%;
+		}
+		.bloco3{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 1%;
+			width:20%;
+			height:20%;
+		}
+		.bloco4{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 18%;
+			width:20%;
+			height:20%;
+		}
+		.bloco5{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 1%;
+			width:20%;
+			height:20%;
+		}
+		.bloco6{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 1%;
+			width:20%;
+			height:20%;
+		}
+		.bloco7{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 18%;
+			width:20%;
+			height:20%;
+		}
+		.bloco8{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 1%;
+			width:20%;
+			height:20%;
+		}
+		.bloco9{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 1%;
+			width:20%;
+			height:20%;
+		}	
+		.circulo{
+			width: 45%;
+			height: 45%;
+			margin-left: 3%;
+			background: orange;
+			border-width: 40px;
+			border-color: black;
+			border-style: outset;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			border-radius: 50%;
+		}
+		.xis1{
+			float: left;
+			margin-top: 30%;
+			width: 100%;
+			height: 30%;
+			background-color: black;
+			transform:rotateZ(45deg);
+			-ms-transform:rotateZ(45deg); /* IE 9 */
+			-moz-transform:rotateZ(45deg); /* Firefox */
+			-webkit-transform:rotateZ(45deg); /* Safari and Chrome */
+			-o-transform:rotateZ(45deg);
+		}
+		.xis2{
+			margin-top: 30%;
+			width: 100%;
+			height: 30%;
+			background-color: black;
+			transform:rotateZ(-45deg);
+			-ms-transform:rotateZ(-45deg); /* IE 9 */
+			-moz-transform:rotateZ(-45deg); /* Firefox */
+			-webkit-transform:rotateZ(-45deg); /* Safari and Chrome */
+			-o-transform:rotateZ(-45deg);
+		}
+		/*
+#myDIV
+{
+background-color:lightblue;
+transform:rotateZ(45deg);
+
+		*/
+
+
+
+
+
+		.esquerda{
+			float: left;
+			background-color: red;
+			width: 512px;
+			height: 50px;
+		}
+		.direita{
+			text-align: center;
+			background-color: green;
+			float: right;
+			width: 256px;
+			height: 50px;
+		}
+		.menuBar{
+			background-color: yellow;
+			margin: 0 auto;
+			height: 100%auto; 
+			width: 950px;
+		}
+		.bannertopo{
+			background-color: blue;
+			margin: 0 auto;
+			height: 100%auto; 
+			width: 850px;
+		}
+		.conteudo{
+			margin: 0 auto;
+			height: 100%auto; 
+			width: 1000px;
+		}
+		.coluna1{
+			text-align: center;
+			float: left;
+			margin: 0 auto;
+			height: 100%auto; 
+			width: 25%;
+		}
+		.coluna2{
+			float: left;
+			margin: 0 auto;
+			height: 100%auto; 
+			width: 25%;
+		}
+		.coluna3{
+			float: left;
+			margin: 0 auto;
+			height: 100%auto; 
+			width: 25%;
+		}
+		.coluna4{
+			float: left;
+			margin: 0 auto;
+			height: 100%auto; 
+			width: 25%;
+		}
+		.item{
+			width: 90%;
+			height: 190px;
+			margin-top: 20px;
+			background-color: lightgray;
+		}
+		#itemImagem{
+			float: left;
+			width: 100px;
+			height: 100px;
+		}
+		.itemTextoDireita{
+			float: right;
+			width: 55%;
+			text-align: left;
+			font-family: Helvetica;
+			font-size: 12px;
+			background-color: lightblue;
+		}
+		.itemTextoDesc{
+			float: left;
+			width: 100% auto;
+			height: 30px;
+			text-align: left;
+			font-family: Helvetica;
+			font-size: 12px;
+			margin-top: 5px;
+		}
+		.itemNomeCidade{
+			font-family: Helvetica;
+			font-size: 18px;
+			color: yellow;
+			margin-top: 28px;
+		}
+		#itemVejaMais{
+			margin-top: 28px;
+			float: right;
+			width: 90px;
+			height: 25px;
+		}
+		p{
+			text-align: left;
+			margin-left: 1%;
+			font-family:Helvetica;
+			color: darkblue;
+		}
+			
+		h1{
+			margin-left: 1%;
+			margin-top: 3%;
+			font-family:Helvetica;
+			text-align: left;
+		}
+		h4{
+			margin-left: 1%;
+			font-family:Helvetica;
+			text-align: left;
+		}
+		hr{
+			margin-top: 3%;
+		}
