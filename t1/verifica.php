@@ -11,12 +11,21 @@ function iniciaRound($_numPartida){
 	fclose($file);
 }
 
+function verificaExpectador($_numPartida){
+	$file_url = "jogos/".$_numPartida.".txt";
+	$file = fopen($file_url,"r");
+	$partida = explode(";",fread($file,filesize($file_url)));
+	fclose($file);
+	if ($partida[9]!=0) {
+		echo '<META HTTP-EQUIV="refresh" CONTENT="5;URL=expectador.php';
+	}
+}
+
 
 if (isset($_REQUEST['numPartida'])) {
 
-
+verificaExpectador();
 //join.php?partida=11
-$jogos = glob("jogos/*.txt");	
 $pathNovoJogo = getcwd().'/jogos/'.$_REQUEST['numPartida'].'.txt';
 
 
