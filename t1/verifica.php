@@ -1,5 +1,17 @@
 <?php
 
+function iniciaRound($_numPartida){
+	$file_url = "jogos/".$_numPartida.".txt";
+	$file = fopen($file_url,"r");
+	$partida = explode(";",fread($file,filesize($file_url)));
+	fclose($file);
+	$file = fopen($file_url,"w");
+		$partida[9]=1;
+	fwrite($file,$partida[0].";".$partida[1].";".$partida[2].";".$partida[3].";".$partida[4].";".$partida[5].";".$partida[6].";".$partida[7].";".$partida[8].";".$partida[9].";".$partida[10].";".$partida[11].";".$partida[12].";".$partida[13].";");
+	fclose($file);
+}
+
+
 if (isset($_REQUEST['numPartida'])) {
 
 
@@ -16,22 +28,21 @@ if (isset($_REQUEST['nome2'])&&isset($_REQUEST['email2'])) {
 			if ($_REQUEST['email2']!=""){
 		 		$file = fopen($pathNovoJogo,"a");
 				fwrite($file,$_REQUEST['nome2'].";".$_REQUEST['email2'].";");
-		//		echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=jogo.php?partida='.(1+count($jogos)).'">';
+				iniciaRound($_REQUEST['numPartida']);
+				echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=jogo2.php?partida='.$_REQUEST['numPartida'].'">';
 				fclose($file);
 			//echo '&email='.$_REQUEST['email'];	
 			}else{
 				$file = fopen($pathNovoJogo,"w+");
-				fwrite($file,$_REQUEST['nome2'].";nil;");
-			//	echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=jogo.php?partida='.(1+count($jogos)).'">';
+				fwrite($file,$_REQUEST['nome2'].";nil;");	
+				iniciaRound($_REQUEST['numPartida']);
+				echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=jogo2.php?partida='.$_REQUEST['numPartida'].'">';
 				fclose($file);
 			}
 		}
 	}else{
-	echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=join.php?partida='.$_REQUEST['numPartida'].'&e=1">';
+	echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=join2.php?partida='.$_REQUEST['numPartida'].'&e=1">';
 	}
-
-
-
 
 
 

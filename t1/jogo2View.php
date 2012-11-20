@@ -51,16 +51,17 @@ function printCabecalho($arrPartida, $numeropartida){
 	}
 	echo '</span>';
 	echo "</div>";
-	if ($arrPartida[9]==-2) {
+	if ($arrPartida[9]==-1) {
 		printCf();
 		echo 'VOCE PERDEU!!!';
 		printCf();
 	}
-	if ($arrPartida[9]==-1) {
+	if ($arrPartida[9]==-2) {
 		printCf();
 		echo 'VOCE GANHOU!!!';
 		printCf();
 	}
+	
 	echo "</div>";
 }
 
@@ -72,39 +73,39 @@ function printTabuleiro($_arrPartida){
 	echo '<div class="containerTabuleiro">';
 	
 	echo '<div class="bloco0">';
-		printBloco($_arrPartida,0,1);
+		printBloco($_arrPartida,0,2);
 	echo'</div>';
 
 	echo'<div class="bloco1">';
-		printBloco($_arrPartida,1,1);
+		printBloco($_arrPartida,1,2);
 	echo '</div>';
 
 	echo'<div class="bloco2">';
-		printBloco($_arrPartida,2,1);
+		printBloco($_arrPartida,2,2);
 	echo '</div>';
 
 	echo'<div class="bloco3">';
-		printBloco($_arrPartida,3,1);	
+		printBloco($_arrPartida,3,2);	
 	echo '</div>';
 
 	echo'<div class="bloco4">';
-		printBloco($_arrPartida,4,1);	
+		printBloco($_arrPartida,4,2);	
 	echo '</div>';
 
 	echo'<div class="bloco5">';
-		printBloco($_arrPartida,5,1);
+		printBloco($_arrPartida,5,2);
 	echo '</div>';
 
 	echo'<div class="bloco6">';
-		printBloco($_arrPartida,6,1);	
+		printBloco($_arrPartida,6,2);	
 	echo '</div>';
 
 	echo'<div class="bloco7">';
-		printBloco($_arrPartida,7,1);
+		printBloco($_arrPartida,7,2);
 	echo '</div>';
 
 	echo'<div class="bloco8">';
-		printBloco($_arrPartida,8,1);
+		printBloco($_arrPartida,8,2);
 	echo '</div>';
 }
 
@@ -128,7 +129,7 @@ function printBotao($indice, $tipo){
 
 function printBloco($_arrPartida,$_indice,$_caracter){
 	if ($_arrPartida[$_indice]==0) {
-		if ($_arrPartida[9]==1) {
+		if ($_arrPartida[9]==2) {
 			printBotao($_indice,$_caracter);
 		}
 	}

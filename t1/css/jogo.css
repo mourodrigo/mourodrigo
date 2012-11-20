@@ -80,11 +80,19 @@
 			font-size: 45px;
 			color: orange;
 		}
-		.bloco1{
+		.bloco0{
 			float: left;
 			background-color: orange;
 			margin-top: 1%;
 			margin-left: 20%;
+			width:160px;
+			height:160px;
+		}
+		.bloco1{
+			float: left;
+			background-color: orange;
+			margin-top: 1%;
+			margin-left: 1%;
 			width:160px;
 			height:160px;
 		}
@@ -100,7 +108,7 @@
 			float: left;
 			background-color: orange;
 			margin-top: 1%;
-			margin-left: 1%;
+			margin-left: 20%;
 			width:160px;
 			height:160px;
 		}
@@ -108,7 +116,7 @@
 			float: left;
 			background-color: orange;
 			margin-top: 1%;
-			margin-left: 20%;
+			margin-left: 1%;
 			width:160px;
 			height:160px;
 		}
@@ -124,7 +132,7 @@
 			float: left;
 			background-color: orange;
 			margin-top: 1%;
-			margin-left: 1%;
+			margin-left: 20%;
 			width:160px;
 			height:160px;
 		}
@@ -132,19 +140,11 @@
 			float: left;
 			background-color: orange;
 			margin-top: 1%;
-			margin-left: 20%;
-			width:160px;
-			height:160px;
-		}
-		.bloco8{
-			float: left;
-			background-color: orange;
-			margin-top: 1%;
 			margin-left: 1%;
 			width:160px;
 			height:160px;
 		}
-		.bloco9{
+		.bloco8{
 			float: left;
 			background-color: orange;
 			margin-top: 1%;
@@ -188,7 +188,7 @@
 			-o-transform:rotateZ(-45deg);
 		}
 		.botao{
-			background-color: blue;
+			background-color: orange;
 		    cursor:pointer;
 		    width: 160px;
 		    height: 160px;
