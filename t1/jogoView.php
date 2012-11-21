@@ -32,6 +32,7 @@ function printCabecalho($arrPartida, $numeropartida){
 	$url = "";//http://localhost/uffs/mourodrigo/t1/";
 	$emailJ1 = $arrPartida[11];
 	$size = 180;
+	$default = "";
 	$grav_urlJ1 = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $emailJ1 ) ) ) . "?d=retro" . urlencode( $default ) . "&s=" . $size;
 	
 	echo '<img src="'.$grav_urlJ1.'" alt="avatar do usuario 1" />';
