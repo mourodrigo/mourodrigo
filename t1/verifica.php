@@ -24,7 +24,7 @@ function verificaExpectador($_numPartida){
 
 if (isset($_REQUEST['numPartida'])) {
 
-verificaExpectador();
+//verificaExpectador();
 //join.php?partida=11
 $pathNovoJogo = getcwd().'/jogos/'.$_REQUEST['numPartida'].'.txt';
 

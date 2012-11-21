@@ -29,7 +29,7 @@ function printCabecalho($arrPartida, $numeropartida){
 	echo '<div class="containerCabecalho">';
 	echo '<div class="esquerda">';
 	echo '<span class="nomeJogador1">'.$arrPartida[10].'</span>';
-	$url = "http://localhost/uffs/mourodrigo/t1/";
+	$url = "";//http://localhost/uffs/mourodrigo/t1/";
 	$emailJ1 = $arrPartida[11];
 	$size = 180;
 	$grav_urlJ1 = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $emailJ1 ) ) ) . "?d=retro" . urlencode( $default ) . "&s=" . $size;
@@ -42,7 +42,7 @@ function printCabecalho($arrPartida, $numeropartida){
 	if ($arrPartida[9]==0) {
 		printLinkPartida($numeropartida, $url);		//echo "aguardando jogadores...";
 	}else{
-		$url = "http://localhost/uffs/mourodrigo/t1/";
+		$url = "";//"http://localhost/uffs/mourodrigo/t1/";
 		$emailJ2 = $arrPartida[13];
 		$size = 180;
 		$grav_urlJ2 = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $emailJ2 ) ) ) . "?d=retro" . urlencode( $default ) . "&s=" . $size;
