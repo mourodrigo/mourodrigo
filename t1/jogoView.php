@@ -40,7 +40,7 @@ function printCabecalho($arrPartida, $numeropartida){
 	echo '<span class="nomeJogador2">';
 
 	if ($arrPartida[9]==0) {
-		printLinkPartida($numeropartida, $url);		//echo "aguardando jogadores...";
+		printLinkPartida($numeropartida);		//echo "aguardando jogadores...";
 	}else{
 		$url = "";
 		$emailJ2 = $arrPartida[13];
