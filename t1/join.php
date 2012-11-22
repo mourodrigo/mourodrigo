@@ -8,7 +8,6 @@ print_cabecalho();
 print_cf();
 
 
-
 //print_tabuleiro();
 print_cf();
 //print_rodape();
