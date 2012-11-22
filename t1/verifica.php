@@ -1,5 +1,9 @@
 <?php
 
+/*function printRefresh($_tempo, $_arquivo){
+		echo '<META HTTP-EQUIV="refresh" CONTENT="'$_tempo';URL='.$_arquivo.'.php';
+}
+*/
 function iniciaRound($_numPartida){
 	$file_url = "jogos/".$_numPartida.".txt";
 	$file = fopen($file_url,"r");

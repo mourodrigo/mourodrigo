@@ -28,13 +28,13 @@ function printarquivo($arrPartida){
 function printCabecalho($arrPartida, $numeropartida){
 	echo '<div class="containerCabecalho">';
 	echo '<div class="esquerda">';
-	echo '<span class="nomeJogador1">'.$arrPartida[10].'</span>';
 	$emailJ1 = $arrPartida[11];
 	$size = 180;
 	$default = "retro";
 	$grav_urlJ1 = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $emailJ1 ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
 	
 	echo '<img src="'.$grav_urlJ1.'" alt="avatar do usuario 1" />';
+	echo '<br><span class="nomeJogador1">'.$arrPartida[10].'</span>';
 	echo "</div>";
 	echo '<div class="direita">';
 	echo '<span class="nomeJogador2">';
@@ -44,27 +44,42 @@ function printCabecalho($arrPartida, $numeropartida){
 	}else{
 		$url = "";
 		$emailJ2 = $arrPartida[13];
-		$grav_urlJ2 = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $emailJ2 ) ) ) . "?d=retro" . urlencode( $default ) . "&s=" . $size;
+		$grav_urlJ2 = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $emailJ2 ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
 		echo '<img src="'.$grav_urlJ2.'" alt="avatar do usuario 1" />';
-		echo '<span class="nomeJogador1">'.$arrPartida[12].'</span>';
+		echo '<br><span class="nomeJogador1">'.$arrPartida[12].'</span>';
 	}
 	echo '</span>';
 	echo "</div>";
-	if ($arrPartida[9]==-2) {
-		printCf();
-		echo 'VOCE PERDEU!!!';
-		printCf();
-	}
-	if ($arrPartida[9]==-1) {
-		printCf();
-		echo 'VOCE GANHOU!!!';
-		printCf();
-	}
-	echo "</div>";
+	echo "<span>";
+	echo '<div class="subCabecalho">'; 
+	/*	if ($arrPartida[9]==1) {
+			printCf();
+			echo '';
+			printCf();
+		}
+		if ($arrPartida[9]==2) {
+			printCf();
+			echo 'Aguardando jogador adversário...';
+			printCf();
+		}
+	*/	
+		if ($arrPartida[9]==-1) {
+			printCf();
+			echo 'VOCE PERDEU!!!';
+			printCf();
+		}
+		if ($arrPartida[9]==-2) {
+			printCf();
+			echo 'VOCE GANHOU!!!';
+			printCf();
+		}
+
+	echo '</span>';
+	echo "</div></div>";
 }
 
 function printLinkPartida($_numeropartida){
-		echo 'compartilhe esta partida com seus amigos!';
+		echo '<span>compartilhe esta partida com seus amigos</span>!';
 		echo '<a href="join.php?partida='.$_numeropartida.'"><br>join.php?partida='.$_numeropartida.'</a>';
 }
 function printTabuleiro($_arrPartida){
