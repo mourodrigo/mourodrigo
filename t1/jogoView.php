@@ -1,4 +1,11 @@
 <?php
+/****************************************************
+*Visão jogo da velha (jogador1)						*
+*Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
+*													*
+*													*
+****************************************************/
+
 function print_doctype(){
  echo '<!DOCTYPE html>';
 }
@@ -32,7 +39,6 @@ function printCabecalho($arrPartida, $numeropartida){
 	$size = 180;
 	$default = "retro";
 	$grav_urlJ1 = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $emailJ1 ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
-	
 	echo '<img src="'.$grav_urlJ1.'" alt="avatar do usuario 1" />';
 	echo '<br><span class="nomeJogador1">'.$arrPartida[10].'</span>';
 	echo "</div>";
@@ -111,8 +117,6 @@ function printTabuleiro($_arrPartida){
 	echo '</div>';
 }
 
-
-
 function printXis(){
 	echo'<div class="xis1"> </div>
 	  	 <div class="xis2"> </div>';
@@ -125,7 +129,7 @@ function printBotao($indice, $tipo){
 		  	<input type="hidden" name="numPartida" value="'.$_REQUEST['partida'].'">
 		  	<input type="hidden" name="tipo" value="'.$tipo.'">
 		  	<input type="hidden" name="indice" value="'.$indice.'">
-		  	<input class="botao" type="submit" value="'.$tipo.$indice.'"> 
+		  	<input class="botao" type="submit" value=""> 
 		  </form>';
 }
 
@@ -148,7 +152,5 @@ function printRodape(){
 	echo '</div></body>'; // div que fecha o container
 	echo '</html>';
 }
-
-
 
 ?>

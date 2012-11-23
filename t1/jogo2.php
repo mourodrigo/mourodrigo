@@ -1,5 +1,11 @@
 <meta http-equiv="refresh" content="1">
 <?php 
+/****************************************************
+*Controlador jogo da velha (jogador2)				*
+*Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
+*													*
+*													*
+****************************************************/
 
 function leArquivo(){
 	$file_url = "jogos/".$_REQUEST['partida'].".txt";

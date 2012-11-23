@@ -1,23 +1,14 @@
 <?php
-//function leArquivo(){
+/****************************************************
+*Controlador de jogada, manipula arquivo txt com 	*
+*informações da jogada e administra partida 		*
+*Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
+*													*
+*													*
+****************************************************/
 
-/*
-
-echo '<form class="form" action="index.php" method="post">
-		  	<input type="hidden" name="numPartida" value="'.$_REQUEST['partida'].'">
-		  	<input type="hidden" name="tipo" value="'.$tipo.'">
-		  	<input type="hidden" name="indice" value="'.$indice.'">
-		  	<input class="botao" type="submit" value="'.$tipo.$indice.'"> 
-		  </form>';
-}
-
-*/
-
-//	echo $_REQUEST['indice']."<br>";
-//	echo $_REQUEST['numPartida']."<br>";
-//	echo $_REQUEST['tipo']."<br>";
 function verificaGanhador($_partida, $_jogador){
-	echo "verifica".$_jogador;
+//	echo "verifica".$_jogador;
 
 	if ($_partida[0]==$_jogador && $_partida[1]==$_jogador && $_partida[2]==$_jogador) {
 		return TRUE;	
@@ -45,13 +36,7 @@ function verificaGanhador($_partida, $_jogador){
 	}else{
 		return FALSE;
 	}
-	/*
-if ($_partida[0]==$_jogador && $_partida[0]==$_jogador && $_partida[0]==$_jogador) {
-	return TRUE;	
-	}
-	*/
-}
-	
+}	
 
 	$file_url = "jogos/".$_REQUEST['numPartida'].".txt";
 	$file = fopen($file_url,"r");
@@ -63,30 +48,20 @@ if ($_partida[0]==$_jogador && $_partida[0]==$_jogador && $_partida[0]==$_jogado
 			echo "indice inválido";
 		}
 	$file = fopen($file_url,"w");
-	
 	if (verificaGanhador($partida, $_REQUEST['tipo'])) {
-		echo "ganhou!";
-
-
+		//echo "ganhou!";
 		if ($_REQUEST['tipo']==1) {
 			$partida[9]=-1;
 		}else{
 			$partida[9]=-2;
 		}
-
-
-
-
-
 	}else{
-
-	if ($partida[9]==1) {
-		$partida[9]=2;
-	}else{
-		$partida[9]=1;
+		if ($partida[9]==1) {
+			$partida[9]=2;
+		}else{
+			$partida[9]=1;
+		}
 	}
-}
-
 
 	fwrite($file,$partida[0].";".$partida[1].";".$partida[2].";".$partida[3].";".$partida[4].";".$partida[5].";".$partida[6].";".$partida[7].";".$partida[8].";".$partida[9].";".$partida[10].";".$partida[11].";".$partida[12].";".$partida[13].";");
 	fclose($file);
@@ -96,8 +71,4 @@ if ($_partida[0]==$_jogador && $_partida[0]==$_jogador && $_partida[0]==$_jogado
 	}else{
 			echo '<META HTTP-EQUIV="refresh" CONTENT="0;URL=jogo2.php?partida='.$_REQUEST['numPartida'].'">';
 	}
-				
-//	return $_partida;
-//}
-
 ?>

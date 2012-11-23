@@ -1,4 +1,11 @@
-<?php //ini_set(0);
+<?php
+/****************************************************
+*Visão jogo da velha (jogador2)						*
+*Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
+*													*
+*													*
+****************************************************/
+
 function print_doctype(){
  echo '<!DOCTYPE html>';
 }
@@ -41,9 +48,9 @@ function printCabecalho($arrPartida, $numeropartida){
 	echo '<span class="nomeJogador2">';
 
 	if ($arrPartida[9]==0) {
-		printLinkPartida($numeropartida);		//echo "aguardando jogadores...";
+		printLinkPartida($numeropartida);//echo "aguardando jogadores...";
 	}else{
-		$url = "";//"http://localhost/uffs/mourodrigo/t1/";
+		$url = "";
 		$emailJ2 = $arrPartida[13];
 		$grav_urlJ2 = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $emailJ2 ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
 	
@@ -138,7 +145,7 @@ function printBotao($indice, $tipo){
 		  	<input type="hidden" name="numPartida" value="'.$_REQUEST['partida'].'">
 		  	<input type="hidden" name="tipo" value="'.$tipo.'">
 		  	<input type="hidden" name="indice" value="'.$indice.'">
-		  	<input class="botao" type="submit" value="'.$tipo.$indice.'"> 
+		  	<input class="botao" type="submit" value=""> 
 		  </form>';
 }
 
@@ -161,7 +168,4 @@ function printRodape(){
 	echo '</div></body>'; // div que fecha o container
 	echo '</html>';
 }
-
-
-
 ?>

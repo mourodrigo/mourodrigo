@@ -1,15 +1,15 @@
 <?php 
+/****************************************************
+*Controlador da página de login						*
+*Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
+*													*
+*													*
+****************************************************/
 require "indexView.php";
 print_doctype();
 import_css("css/index.css");
-print_header("Jogo da velha awesome");
+print_header("Jogo da velha maneiro");
 print_body();
 print_cabecalho();
 print_cf();
-
-
-
-//print_tabuleiro();
-print_cf();
-//print_rodape();
 ?>

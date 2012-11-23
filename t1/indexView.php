@@ -1,4 +1,11 @@
 <?php
+/****************************************************
+*View da página de login							*
+*Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
+*													*
+*													*
+****************************************************/
+
 function print_doctype(){
  echo '<!DOCTYPE html>';
 }
@@ -40,7 +47,4 @@ function print_rodape(){
 	echo '</div></body>'; // div que fecha o container
 	echo '</html>';
 }
-
-
-
 ?>
