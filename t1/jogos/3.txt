@@ -1,1 +1,1 @@
-1;2;0;0;0;0;0;0;0;1;rodrigo;rodrigo.px@gmail.com;rodrigo;rodrigo;
+1;1;1;0;2;2;0;0;0;-1;rodrigo;rodrigo.px@gmail.com;fsdf;asdf;

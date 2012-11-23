@@ -204,120 +204,13 @@
 		.formLogin{
 			text-align: center;
 		}
-		/*
-#myDIV
-{
-background-color:lightblue;
-transform:rotateZ(45deg);
-
-		*/
-
-
-
-
-
-		.esquerda{
-			float: left;
-			background-color: red;
-			width: 512px;
-			height: 50px;
-		}
-		.direita{
-			text-align: center;
-			background-color: green;
-			float: right;
-			width: 256px;
-			height: 50px;
-		}
-		.menuBar{
-			background-color: yellow;
-			margin: 0 auto;
-			height: 100%auto; 
-			width: 950px;
-		}
-		.bannertopo{
-			background-color: blue;
-			margin: 0 auto;
-			height: 100%auto; 
-			width: 850px;
-		}
-		.conteudo{
-			margin: 0 auto;
-			height: 100%auto; 
-			width: 1000px;
-		}
-		.coluna1{
-			text-align: center;
-			float: left;
-			margin: 0 auto;
-			height: 100%auto; 
-			width: 25%;
-		}
-		.coluna2{
-			float: left;
-			margin: 0 auto;
-			height: 100%auto; 
-			width: 25%;
-		}
-		.coluna3{
-			float: left;
-			margin: 0 auto;
-			height: 100%auto; 
-			width: 25%;
-		}
-		.coluna4{
-			float: left;
-			margin: 0 auto;
-			height: 100%auto; 
-			width: 25%;
-		}
-		.item{
-			width: 90%;
-			height: 190px;
-			margin-top: 20px;
-			background-color: lightgray;
-		}
-		#itemImagem{
-			float: left;
-			width: 100px;
-			height: 100px;
-		}
-		.itemTextoDireita{
-			float: right;
-			width: 55%;
-			text-align: left;
-			font-family: Helvetica;
-			font-size: 12px;
-			background-color: lightblue;
-		}
-		.itemTextoDesc{
-			float: left;
-			width: 100% auto;
-			height: 30px;
-			text-align: left;
-			font-family: Helvetica;
-			font-size: 12px;
-			margin-top: 5px;
-		}
-		.itemNomeCidade{
-			font-family: Helvetica;
-			font-size: 18px;
-			color: yellow;
-			margin-top: 28px;
-		}
-		#itemVejaMais{
-			margin-top: 28px;
-			float: right;
-			width: 90px;
-			height: 25px;
-		}
 		p{
-			text-align: left;
+			text-align: center;
 			margin-left: 1%;
 			font-family:Helvetica;
-			color: darkblue;
-		}
-			
+			font-size: 20px;
+			color: orange;
+		}		
 		h1{
 			margin-left: 1%;
 			margin-top: 3%;

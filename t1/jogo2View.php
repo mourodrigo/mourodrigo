@@ -60,30 +60,27 @@ function printCabecalho($arrPartida, $numeropartida){
 	}
 	echo '</span>';
 	echo "</div>";
-	echo "<span>";
 	echo '<div class="subCabecalho">'; 
-	/*	if ($arrPartida[9]==1) {
+		if ($arrPartida[9]==1) {
 			printCf();
-			echo '';
+			echo '<p>Aguardando jogador adversário....</p>';
 			printCf();
 		}
 		if ($arrPartida[9]==2) {
 			printCf();
-			echo 'Aguardando jogador adversário...';
+			echo '<p>Jogue!!!</p>';
 			printCf();
 		}
-	*/
 		if ($arrPartida[9]==-1) {
 			printCf();
-			echo 'VOCE PERDEU!!!';
+			echo '<span>VOCE PERDEU!!!</span>';
 			printCf();
 		}
 		if ($arrPartida[9]==-2) {
 			printCf();
-			echo 'VOCE GANHOU!!!';
+			echo '<span>VOCE GANHOU!!!</span>';
 			printCf();
 		}
-	echo '</span>';
 	echo "</div></div>";
 }
 

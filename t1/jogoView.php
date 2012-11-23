@@ -56,20 +56,29 @@ function printCabecalho($arrPartida, $numeropartida){
 	}
 	echo '</span>';
 	echo "</div>";
-	echo "<span>";
 	echo '<div class="subCabecalho">'; 
+		if ($arrPartida[9]==2) {
+			printCf();
+			echo '<p>Aguardando jogador adversário....</p>';
+			printCf();
+		}
+		if ($arrPartida[9]==1) {
+			printCf();
+			echo '<p>Jogue!!!</p>';
+			printCf();
+		}
+
 		if ($arrPartida[9]==-2) {
 			printCf();
-			echo 'VOCE PERDEU!!!';
+			echo '<span>VOCE PERDEU!!!</span>';
 			printCf();
 		}
 		if ($arrPartida[9]==-1) {
 			printCf();
-			echo 'VOCE GANHOU!!!';
+			echo '<span>VOCE GANHOU!!!</span>';
 			printCf();
 		}
 
-	echo '</span>';
 	echo "</div></div>";
 }
 
@@ -118,8 +127,10 @@ function printTabuleiro($_arrPartida){
 }
 
 function printXis(){
-	echo'<div class="xis1"> </div>
-	  	 <div class="xis2"> </div>';
+	echo'<!--[if IE]>ie<![endif]-->';
+	echo'<![if !IE]><div class="xis1"></div>
+	  	<div class="xis2"> </div>
+		<![endif]>';
 }
 function printCirculo(){
 	echo'<div class="circulo"> </div>';
