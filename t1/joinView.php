@@ -6,15 +6,15 @@
 *													*
 ****************************************************/
 
-function print_doctype(){
+function printDoctype(){
  echo '<!DOCTYPE html>';
 }
 
-function import_css($caminho){
+function importCss($caminho){
  echo '<link rel="stylesheet" type="text/css" href="'.$caminho.'" media="screen" />';
 }
 
-function print_header($nome){
+function printHeader($nome){
 	echo '<html>';
 	echo '<head>';
 	echo '<meta http-equiv="Content-Type" content="text/html;charset=utf-8">';
@@ -22,14 +22,14 @@ function print_header($nome){
 	echo '</head>';
 }
 
-function print_cf(){
+function printCf(){
 	echo '<div class="cf"> </div>';
 }
-function print_body(){
+function printBody(){
 	echo '<body>';
 	echo '<div class="container">';
 }
-function print_cabecalho(){
+function printCabecalho(){
 	echo "<span>Jogo da velha maneiro.</span>";
 	echo '<form class="formLogin" action="verifica.php" method="post">';
 	echo '<input type="hidden" name="numPartida" value="'.$_REQUEST['partida'].'">';
@@ -43,7 +43,7 @@ function print_cabecalho(){
 	}
 }
 
-function print_rodape(){
+function printRodape(){
 	echo '<div class="rodape">rodape</div>';
 	echo '</div></body>'; // div que fecha o container
 	echo '</html>';

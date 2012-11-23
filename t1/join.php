@@ -7,10 +7,11 @@
 ****************************************************/
 
 require "joinView.php";
-print_doctype();
-import_css("css/index.css");
-print_header("Jogo da velha awesome");
-print_body();
-print_cabecalho();
-print_cf();
+printDoctype();
+importCss("css/index.css");
+printHeader("Jogo da velha awesome");
+printBody();
+printCabecalho();
+printCf();
+printRodape();
 ?>

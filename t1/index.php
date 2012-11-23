@@ -6,10 +6,11 @@
 *													*
 ****************************************************/
 require "indexView.php";
-print_doctype();
-import_css("css/index.css");
-print_header("Jogo da velha maneiro");
-print_body();
-print_cabecalho();
-print_cf();
+printDoctype();
+importCss("css/index.css");
+printHeader("Jogo da velha maneiro");
+printBody();
+printCabecalho();
+printCf();
+printRodape();
 ?>

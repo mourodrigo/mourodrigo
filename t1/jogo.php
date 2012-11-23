@@ -1,5 +1,11 @@
 <meta http-equiv="refresh" content="1">
 <?php 
+/****************************************************
+*Controlador jogo da velha (jogador1)				*
+*Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
+*													*
+*													*
+****************************************************/
 
 function leArquivo(){
 	$file_url = "jogos/".$_REQUEST['partida'].".txt";
@@ -13,7 +19,7 @@ require "jogoView.php";
 
 $jogo = leArquivo();
 
-print_doctype();
+printDoctype();
 importCss("css/jogo.css");
 printHeader("Jogo da velha awesome");
 printBody();

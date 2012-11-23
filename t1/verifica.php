@@ -13,7 +13,7 @@ function iniciaRound($_numPartida){
 	$partida = explode(";",fread($file,filesize($file_url)));
 	fclose($file);
 	$file = fopen($file_url,"w");
-		$partida[9]=1;
+	$partida[9]=1;
 	fwrite($file,$partida[0].";".$partida[1].";".$partida[2].";".$partida[3].";".$partida[4].";".$partida[5].";".$partida[6].";".$partida[7].";".$partida[8].";".$partida[9].";".$partida[10].";".$partida[11].";".$partida[12].";".$partida[13].";");
 	fclose($file);
 }
@@ -27,15 +27,16 @@ if (isset($_REQUEST['numPartida'])) {
 			if ($_REQUEST['email2']!=""){
 		 		$file = fopen($pathNovoJogo,"a");
 				fwrite($file,$_REQUEST['nome2'].";".$_REQUEST['email2'].";");
+				fclose($file);
 				iniciaRound($_REQUEST['numPartida']);
 				echo '<META HTTP-EQUIV="refresh" CONTENT="3;URL=jogo2.php?partida='.$_REQUEST['numPartida'].'">';
-				fclose($file);
 			}else{
 				$file = fopen($pathNovoJogo,"w+");
 				fwrite($file,$_REQUEST['nome2'].";nil;");	
+				fclose($file);
 				iniciaRound($_REQUEST['numPartida']);
 				echo '<META HTTP-EQUIV="refresh" CONTENT="3;URL=jogo2.php?partida='.$_REQUEST['numPartida'].'">';
-				fclose($file);
+				
 			}
 		}
 	}else{

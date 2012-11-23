@@ -6,7 +6,7 @@
 *													*
 ****************************************************/
 
-function print_doctype(){
+function printDoctype(){
  echo '<!DOCTYPE html>';
 }
 
@@ -29,7 +29,7 @@ function printBody(){
 	echo '<body>';
 	echo '<div class="container">';
 }
-function printarquivo($arrPartida){
+function printArquivo($arrPartida){//debug
 	echo $arrPartida[0].$arrPartida[1].$arrPartida[2].$arrPartida[3].$arrPartida[4].$arrPartida[5].$arrPartida[6].$arrPartida[7].$arrPartida[8].$arrPartida[9];
 }
 function printCabecalho($arrPartida, $numeropartida){
