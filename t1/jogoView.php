@@ -127,13 +127,15 @@ function printTabuleiro($_arrPartida){
 }
 
 function printXis(){
-	echo'<!--[if IE]>ie<![endif]-->';
+	echo'<!--[if IE]><img src="imagens/XIS.png" alt="xis" height="150" width="150"><![endif]-->';
 	echo'<![if !IE]><div class="xis1"></div>
 	  	<div class="xis2"> </div>
 		<![endif]>';
 }
 function printCirculo(){
-	echo'<div class="circulo"> </div>';
+echo'<!--[if IE]><img src="imagens/CIRCULO.png" alt="xis" height="150" width="150"><![endif]-->';
+	echo'<div class="circulo"> </div>
+		<![endif]>';
 }
 function printBotao($indice, $tipo){
 	echo '<form class="form" action="verificaJogada.php" method="post">
