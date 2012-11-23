@@ -30,7 +30,7 @@ function printBody(){
 	echo '<div class="container">';
 }
 function printCabecalho(){
-	echo "<span>Jogo da velha awesome</span>";
+	echo "<span>Jogo da velha maneiro</span>";
 	echo '<form class="formLogin" action="verifica.php" method="post">';
 	echo '<br><span id="textoInfo"> Nome: </span> <input class="txtinput" type="text" name="nome" ><br>';
 	echo '<br><span id="textoInfo"> Gravatar: </span> <input class="txtinput" type="text" name="email"><br>';

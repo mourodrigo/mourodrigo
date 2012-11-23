@@ -26,13 +26,13 @@ if (isset($_REQUEST['numPartida'])) {
 		}else{
 			if ($_REQUEST['email2']!=""){
 		 		$file = fopen($pathNovoJogo,"a");
-				fwrite($file,$_REQUEST['nome2'].";".$_REQUEST['email2'].";");
+				fwrite($file,$_REQUEST['nome2'].";nil;");	
 				fclose($file);
 				iniciaRound($_REQUEST['numPartida']);
 				echo '<META HTTP-EQUIV="refresh" CONTENT="3;URL=jogo2.php?partida='.$_REQUEST['numPartida'].'">';
 			}else{
 				$file = fopen($pathNovoJogo,"w+");
-				fwrite($file,$_REQUEST['nome2'].";nil;");	
+				fwrite($file,$_REQUEST['nome2'].";".$_REQUEST['email2'].";");
 				fclose($file);
 				iniciaRound($_REQUEST['numPartida']);
 				echo '<META HTTP-EQUIV="refresh" CONTENT="3;URL=jogo2.php?partida='.$_REQUEST['numPartida'].'">';
