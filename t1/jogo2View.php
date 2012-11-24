@@ -146,9 +146,9 @@ function printXis(){
 }
 function printCirculo(){
 	echo'<!--[if IE]><img src="imagens/CIRCULO.png" alt="xis" height="150" width="150"><![endif]-->';
-	echo'<![if !IE]><div class="circulo"></div></div>
-	<![endif]>';
+	echo'<![if !IE]><div class="circulo"> </div><![endif]>';
 }
+
 function printBotao($indice, $tipo){
 	echo '<form class="form" action="verificaJogada.php" method="post">
 		  	<input type="hidden" name="numPartida" value="'.$_REQUEST['partida'].'">
