@@ -3,7 +3,7 @@
 *Controlador de jogada, manipula arquivo txt com 	*
 *informações da jogada e administra partida 		*
 *Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
-*													*
+*Andrey B. Ramos - andreybramos@hotmail.com			*
 *													*
 ****************************************************/
 

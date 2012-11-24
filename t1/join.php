@@ -2,7 +2,7 @@
 /****************************************************
 *View da página de login jogador 2					*
 *Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
-*													*
+*Andrey B. Ramos - andreybramos@hotmail.com			*
 *													*
 ****************************************************/
 

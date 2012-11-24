@@ -3,7 +3,7 @@
 *Controlador de login, cria e manipula arquivo txt 	*
 *com informações dos jogadores e inicia a partida	*
 *Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
-*													*
+*Andrey B. Ramos - andreybramos@hotmail.com			*
 *													*
 ****************************************************/
 

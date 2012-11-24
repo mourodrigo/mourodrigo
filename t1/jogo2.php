@@ -3,7 +3,7 @@
 /****************************************************
 *Controlador jogo da velha (jogador2)				*
 *Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
-*													*
+*Andrey B. Ramos - andreybramos@hotmail.com			*
 *													*
 ****************************************************/
 

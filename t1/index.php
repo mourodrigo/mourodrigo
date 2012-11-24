@@ -2,7 +2,7 @@
 /****************************************************
 *Controlador da página de login						*
 *Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
-*													*
+*Andrey B. Ramos - andreybramos@hotmail.com			*
 *													*
 ****************************************************/
 require "indexView.php";

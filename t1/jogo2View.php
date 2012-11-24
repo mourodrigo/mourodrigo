@@ -2,6 +2,7 @@
 /****************************************************
 *Visão jogo da velha (jogador2)						*
 *Rodrigo Bueno Tomiosso - rodrigobt20@gmail.com 	*
+*Andrey B. Ramos - andreybramos@hotmail.com			*
 *													*
 *													*
 ****************************************************/
@@ -128,7 +129,7 @@ function printTabuleiro($_arrPartida){
 		printBloco($_arrPartida,8,2);
 	echo '</div>';
 }
-/*
+
 function printXis(){
 	echo'<div class="xis1"> </div>
 	  	 <div class="xis2"> </div>';
@@ -136,18 +137,8 @@ function printXis(){
 
 function printCirculo(){
 	echo'<div class="circulo"> </div>';
-}*/
+}
 
-function printXis(){
-	echo'<!--[if IE]><img src="imagens/XIS.png" alt="xis" height="150" width="150"><![endif]-->';
-	echo'<![if !IE]><div class="xis1"></div>
-	  	<div class="xis2"> </div>
-		<![endif]>';
-}
-function printCirculo(){
-	echo'<!--[if IE]><img src="imagens/CIRCULO.png" alt="xis" height="150" width="150"><![endif]-->';
-	echo'<![if !IE]><div class="circulo"> </div><![endif]>';
-}
 
 function printBotao($indice, $tipo){
 	echo '<form class="form" action="verificaJogada.php" method="post">
